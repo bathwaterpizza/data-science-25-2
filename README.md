@@ -144,7 +144,7 @@ python -c "import xgboost, sklearn; print('OK')"
 
 ## 🚀 Como Executar
 
-### 1. Exploração e Análise (Notebooks Jupyter)
+### Exploração e Análise (Notebooks Jupyter)
 
 ```bash
 # Ative o ambiente
@@ -163,26 +163,6 @@ jupyter lab
 5. `phase4_hyperparameter_tuning.ipynb` - Otimização do XGBoost
 6. `phase5_improved_evaluation.ipynb` - Avaliação com métricas avançadas
 7. `model_performance_report.ipynb` - **Relatório final completo** ⭐
-
-### 2. Fazer Previsões em Produção
-
-O script `production_predict.py` utiliza o modelo otimizado para fazer previsões em novos dados:
-
-```bash
-# Uso básico
-python production_predict.py --input dados_novos.csv --output predicoes.csv
-
-# Com prediction clipping (recomendado)
-python production_predict.py --input dados_novos.csv --output predicoes.csv --clip
-
-# Ver todas as opções
-python production_predict.py --help
-```
-
-**Formato esperado do arquivo de entrada:**
-
-- CSV com as mesmas features usadas no treinamento
-- Ou arquivo com dados brutos (o script aplicará o preprocessing)
 
 ---
 
@@ -204,8 +184,6 @@ data-science-25-2/
 ├── phase4_hyperparameter_tuning.ipynb    # Fase 4: Tuning
 ├── phase5_improved_evaluation.ipynb      # Fase 5: Métricas avançadas
 ├── model_performance_report.ipynb        # 📊 Relatório Final
-│
-├── production_predict.py                  # Script de produção
 │
 ├── models/                                # Modelos treinados
 │   ├── xgboost_tuned.pkl                 # 🏆 Modelo final
